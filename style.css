@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background: linear-gradient(to left, #8E24AA 0%, #3F51B5 50%, #2196F3 100%);
+    font-family: 'Times New Roman', sans-serif;
+    overflow-x: hidden;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.intro, .about, .projects, .skills, .contact {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(to right bottom, rgba(245, 245, 220, 0.3), rgba(210, 180, 140, 0.3));
+    backdrop-filter: blur(1em);
+    width: 80%;
+    max-width: 600px;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 2em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.intro:hover, .about:hover, .projects:hover, .skills:hover, .contact:hover {
+    transform: translateY(-5px);
+}
+
+.intro {
+    margin-top: 5em;
+}
+
+.intro h2 {
+    margin-top: 1em;
+    font-weight: lighter;
+    color: #FFC67D;
+    font-size: 2.5em;
+}
+
+.intro h3 {
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+span {
+    font-weight: 900;
+    color: #FFD700;
+}
+
+h2 {
+    font-size: 2em;
+    color: #FFD700;
+}
+
+p, li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 1em;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF8C00;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 1em 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav li {
+    margin: 0;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+}
+
+@media (max-width: 800px) {
+    .intro, .about, .projects, .skills, .contact {
+        width: 90%;
+    }
+    nav ul {
+        gap: 1em;
+    }
+    .nav-link {
+        font-size: 1em;
+    }
+}

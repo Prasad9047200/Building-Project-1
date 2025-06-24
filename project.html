@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+canvas.webgl {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+div.btns {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+button:hover{
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div>
+    <button id="prev-view"></button>
+    <button id="next-view"></button>
+  </div>
+    <canvas class="webgl"></canvas>
+    <main>
+      <!-- Intro section view -->
+       <div class="intro-container container">
+          <div class="intro">
+              <h1>
+                  Hello!
+                  <img src="./static/hand.png" alt="hand-wave-emoji" height = "35px" width="35px">
+              </h1>
+              <h2>
+                  I'm <span>Prasad Gudivada</span>
+              </h2>
+              <h3>
+                  Hello, I'm <span>Prasad</span> from <i>Vizianagaram</i>, currently pursuing my final year of B.Tech in <i>Computer Science and Engineering.</i> With a strong foundation in emerging technologies, I possess experience in AR/VR, AWS services, and virtualization processes. Additionally, I've developed beginner-level expertise in cybersecurity and privacy protection analysis.
+  
+                  <img src="./static/laptop.png" alt="laptop-emoji" height = "35px" width="35px">
+              </h3>
+          </div>
+       </div>
+  
+       <div>
+          <!-- About Container-->
+           <div class="about-container container">
+              <div class="about">
+                  <h2>
+                      Background 🌏
+                  </h2>
+                  <h4>
+                     <p>Currently pursuing a B.Tech in Computer Science at Satya Institute of Technology and Management (CGPA: 7.66). I have a strong foundation from Sujatha Junior College (92%) and Z P High School (92%). My journey is driven by curiosity, innovation, and a commitment to solving real-world problems through technology.</p>
+                     <span>Like This</span>
+                  </h4>
+              </div>
+           </div>
+       </div>
+       <!-- Project Container-->
+        <div class="project-container container">
+          <div class="projects">
+              <h2>
+                  Projects 🚀
+                  <img src="./static/trophy.png" alt="trophy-emoji" height = "35px" width="35px">
+              </h2>
+              <h4>
+                  THIS IS LIST OF PROJECTS.
+               <ul>
+                <li><strong>Intelligent Distribution FAP</strong>: Java full-stack application using Fast API and ML to detect fraudulent credit card transactions, integrated with MySQL.</li>
+                <li><strong>IPL Score Prediction</strong>: Machine learning model with 85% accuracy using Python and Scikit-learn for score prediction.</li>
+                <li><strong>3D Web & AR/VR</strong>: Developed immersive 3D web applications using Three.js and AR/VR experiences with Plug XR.</li>
+                <li><strong>Cybersecurity Analysis</strong>: WiFi security threat analysis using Cyber Triage, Kali Linux, and Parrot OS.</li>
+               </ul>   
+                  
+              </h4>
+          </div>
+        </div>
+        <!-- SKILLS Container -->
+         <div calss="skils-container container">
+          <div class="skills">
+              <h2>
+              Skills 🧠
+              </h2>
+              <h4>
+                <bold>THIS IS THE LIST OF SKILLS</bold>
+               <ul>
+              <li>AWS (Cloud Services, EC2, S3, IAM)</li>
+                <li>Machine Learning (Python, Scikit-learn)</li>
+                <li>Cybersecurity (Penetration Testing, Threat Analysis)</li>
+                <li>Web Development (HTML, CSS, JavaScript, Three.js)</li>
+                <li>AR/VR (Plug XR)</li>
+                <li>Java, Spring Boot</li>
+               </ul>   
+               </h4>
+               </div>
+               </div>
+  
+                 <!-- Contact Container --> 
+                  <div class="contact-container container">
+                      <div class="contact">
+                          <h2>
+                              Contact 📱
+                          </h2 >
+                          <h4>
+                            <ul>
+                              <li><a href="mailto:gudivadaprasad95@gmail.com">Email: gudivadaprasad95@gmail.com</a></li>
+                              <li><a href="lindelnto:prasad-gudivada">Linkeldn: https://www.linkedin.com/in/prasad-gudivada</a></Linkeldn:></li>
+                               <li>Contact 1: 8712128104</li>
+                            </ul>   
+                      </div>
+                  </div>
+              </h4>
+          </div>
+         </div>
+     </main> 
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.173.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.173.0/examples/jsm/"
+        }
+      }
+    </script>
+    <!-- <canvas class="webgl"></canvas> -->
+     <script src=" https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src ="https://cdn.jsdelivr.net/npm/lil-gui@0.19/+esm"></script> </script>
+    <script src="project.js" type ="module"></script>     
+</body>
+</html>
